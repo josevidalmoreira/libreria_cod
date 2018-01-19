@@ -4,7 +4,7 @@ package Dialogos;
 import javax.swing.JOptionPane;
 import java.util.Scanner;
 public class Dialogos {
-    public String introduceDato(){
+    public static String introduceDato(){
   String dato;
         dato=JOptionPane.showInputDialog("introduce el dato");
         return dato;
@@ -13,12 +13,12 @@ public class Dialogos {
      * 
      * @param msg 
      */
-    public void respuesta(String msg){
+    public static void respuesta(String msg){
        
         System.out.println(msg);
         JOptionPane.showInputDialog(msg, "estas seguro");
     }
-    public int datoINT(){
+    public static int datoINT(){
         int dato;
         Scanner sc = new Scanner(System.in);
         System.out.println("introduce el numero entero");
@@ -26,7 +26,7 @@ public class Dialogos {
         return dato;
     } 
     
-    public float datoFLOAT(){
+    public static float datoFLOAT(){
         float dato;
         Scanner sc = new Scanner(System.in);
         System.out.println("introduce el numero ");
