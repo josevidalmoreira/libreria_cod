@@ -4,9 +4,9 @@ package Dialogos;
 import javax.swing.JOptionPane;
 import java.util.Scanner;
 public class Dialogos {
-    public static String introduceDato(){
+    public static String introduceDato(String msg){
   String dato;
-        dato=JOptionPane.showInputDialog("introduce el dato");
+        dato=JOptionPane.showInputDialog(msg);
         return dato;
     }
     /**
